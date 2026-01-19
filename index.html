@@ -8,44 +8,128 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      color: white;
-      text-align: center;
-      padding: 40px;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    .card {
+      background: white;
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      text-align: center;
+      margin-bottom: 4px;
+      color: #1e3a8a;
     }
+
     p {
-      opacity: 0.9;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #555;
     }
-    a {
-      display: block;
-      margin: 20px auto;
-      padding: 16px;
-      width: 85%;
-      max-width: 320px;
-      background: #3b82f6;
+
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background: #2563eb;
       color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 18px;
+      border: none;
       font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1e40af;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
     }
   </style>
 </head>
-
 <body>
 
-  <h1>AZULE</h1>
-  <p>Barber Booking System</p>
+  <div class="card">
+    <h1>AZULE</h1>
+    <p>Barber Booking System</p>
 
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQcXztfhCUIK4ju9zk4wMrLhEdkj72R0PGfnlsGDfbJ29BgC9fuQVmtoqt0eHo7Jk5nVjNzmKZe6M4H/pub?output=csv";
+    <!-- GOOGLE FORM SUBMISSION -->
+    <form
+      action="https://docs.google.com/forms/d/139whx0sKsHXu67Nx_h5y4wwdHXFbkH_xwv-luREKLQU/viewform
+      method="POST"
+      target="_blank"
+      enctype="multipart/form-data"
+    >
 
-    Book Appointment
-  </a>
+      <!-- FULL NAME -->
+      <input
+        type="text"
+        name="entry.1111111111"
+        placeholder="Full Name"
+        required
+      />
+
+      <!-- PHONE -->
+      <input
+        type="tel"
+        name="entry.2222222222"
+        placeholder="Phone Number"
+        required
+      />
+
+      <!-- EMAIL -->
+      <input
+        type="email"
+        name="entry.3333333333"
+        placeholder="Email Address"
+        required
+      />
+
+      <!-- HAIRSTYLE TEXT -->
+      <textarea
+        name="entry.4444444444"
+        rows="3"
+        placeholder="Describe the hairstyle you want"
+        required
+      ></textarea>
+
+      <!-- HAIRSTYLE IMAGE -->
+      <input
+        type="file"
+        name="entry.5555555555"
+        accept="image/*"
+      />
+
+      <button type="submit">Submit Appointment</button>
+
+      <div class="note">
+        You may type the hairstyle OR upload a reference photo.
+      </div>
+
+    </form>
+  </div>
 
 </body>
 </html>
