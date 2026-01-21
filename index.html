@@ -1,104 +1,133 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Azoul | Barber Booking</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Azule | Barber Booking</title>
 
-  justify-content: center;
-      align-items: center;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #1e3a8a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
 
-    .card {
-      background: white;
-      width: 100%;
-      max-width: 420px;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
+  .card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+   : 30px;
+    border-radius: 12px;
+  }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 4px;
-      color: #1e3a8a;
-         border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
+  h1 {
+    text-align: center;
+    margin: 0;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
 
-    textarea {
-      resize: none;
-    }
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
 
-    button {
-      background: #2563eb;
-      color: white;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
+  input,
+  textarea,
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
 
-    button:hover {
-      background: #1e40af;
-    }
+  textarea {
+    resize: none;
+  }
 
-    .note {
-      font-size: 12px;
-      color: #777;
-      text-align: center;
-    }
-  </style>
+  button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #1e40af;
+  }
+
+  .note {
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+  }
+</style>
+
 </head>
 <body>
 
-  <div class="card">
-    <h1>AZULE</h1>
-    <p>Barber Booking System</p>
+<div class="card">
+  <h1>AZULE</h1>
+  <p>Barber Booking System</p>
 
-    <!-- GOOGLE FORM SUBMISSION -->
-    <form
-      action="https://docs.google.com/forms/d/e/1FAIpQLSc1CkBVFqJcPh6okvPAlGJMdZgdnJQmutn6L8EDNXtBq      <!-- FULL NAME -->
-      <input
-        type="text"
-        name="entry.REPLACE_1"
-        placeholder="Full Name"
-        required
-      />
+  <!-- GOOGLE FORM SUBMISSION -->
+  <form 
+    action="https://docs.google.com/forms/d/e/1FAIpQLSc1CkBVFqJcPh6okvPAlGJMdZgdnJQmutn6L8EDNXtBqWWa2Q/formResponse"
+   
+    <input 
+      type="text"
+      name="entry.1609121716"
+      placeholder="Full Name"
+      required
+    />
 
-      <!-- PHONE NUMBER -->
-      <input
-        type="tel"
-        name="entry.REPLACE_2"
-        placeholder="Phone Number"
-        required
-      />
+    <!-- PHONE NUMBER -->
+    <input 
+      type="tel"
+      name="entry.440340355"
+      placeholder="Phone Number"
+      required
+    />
 
-      <!-- EMAIL -->
-      <input
-        type="email"
-        name="entry.REPLACE_3"
-        placeholder="Email Address"
-        required
-      />
+    <!-- EMAIL ADDRESS -->
+    <input 
+      type="email"
+      name="entry.1320080110"
+      placeholder="Email Address"
+      required
+    />
 
-      <!-- HAIRSTYLE DESCRIPTION -->
-      <textarea
-        name="entry.REPLACE_4"
-        rows="3"
-        placeholder="Describe the hairstyle you want"
-        required
-      ></textarea>
+    <!-- HAIRSTYLE DESCRIPTION -->
+    <textarea
+      name="entry.2148676291"
+      placeholder="Describe the hairstyle you want"
+      rows="3"
+      required
+    ></textarea>
 
-      <button type="submit">Submit Appointment</button>
+    <!-- FILE INPUT (visual only, does not submit to Google Forms) -->
+    <input 
+      type="file"
+      accept="image/*"
+    />
 
-      <div class="note">
-        You may type the hairstyle you want.
-      </div>
+    <button type="submit">Submit Appointment</button>
 
-    </form>
-  </div>
+    <div class="note">
+      You may type the hairstyle OR upload a reference photo.
+    </div>
 
-</body>
-</html>
+  </form>
+</div>
+
